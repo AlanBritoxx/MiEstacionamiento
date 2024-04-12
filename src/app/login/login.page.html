@@ -1,0 +1,53 @@
+
+
+
+
+<ion-grid [fixed]="true">
+  <ion-col></ion-col>
+    
+  <ion-col>
+  
+  
+  <ion-content [fullscreen]="true">
+    <ion-icon size="large" name="arrow-back-circle-outline"(click)="goToInicio()"></ion-icon>
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Blank</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <div class="container">
+      <div class="center">
+      <form action="" class="formulario">
+      <h1>Inicio de Sesión</h1>
+      <div class="container2 aaaa" >
+  
+      <ion-item>
+        <ion-label color="#82fad2b6;" position="floating">Ingrese Correo</ion-label>
+        <ion-input  #usuarioInput="ngModel" minlength="3" maxlength="20" required
+                    [(ngModel)]="usuario" [ngModelOptions]="{standalone: true}" name="usuario" color="#82fad2b6;"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label color="#82fad2b6;" position="floating">Contraseña</ion-label>
+        <ion-input  #passwordInput="ngModel" minlength="4" maxlength="4"  required
+                    [(ngModel)]="password" [ngModelOptions]="{standalone: true}" name="password" color="#82fad2b6;" type="password"></ion-input>
+      </ion-item>
+
+  
+  
+      <div class="bflex">
+        
+        <ion-button class="botonesR" expand="block" fill="clear" (click)="register()">Iniciar Sesion</ion-button>
+      </div>
+    </div>
+  </form>
+    </div>    
+    </div>
+  </ion-content>
+  </ion-col>
+  <ion-col></ion-col>
+  
+  </ion-grid>
+  
+  

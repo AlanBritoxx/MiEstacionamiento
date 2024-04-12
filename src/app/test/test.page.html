@@ -1,0 +1,35 @@
+<ion-content  [fullscreen]="true">
+  <div class="map-container">
+    
+    <capacitor-google-map #map style="width: 100%; height: 100%;" [controls]="false"></capacitor-google-map>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="corner-button" (click)="abrirNuevoModal()" width="56" height="56" viewBox="0 0 56 56">
+      <defs>
+        <filter id="Ellipse_1" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse">
+          <feOffset dy="3" input="SourceAlpha"/>
+          <feGaussianBlur stdDeviation="3" result="blur"/>
+          <feFlood flood-opacity="0.161"/>
+          <feComposite operator="in" in2="blur"/>
+          <feComposite in="SourceGraphic"/>
+        </filter>
+      </defs>
+      <g id="Boton_Menú" data-name="Boton Menú" transform="translate(-10 -31)">
+        <g transform="matrix(1, 0, 0, 1, 10, 31)" filter="url(#Ellipse_1)">
+          <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="19" cy="19" r="19" transform="translate(9 6)" fill="#fff"/>
+        </g>
+        <image id="NoPath_-_Copy_5_" data-name="NoPath - Copy (5)" width="36" height="36" transform="translate(20 38)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAApJJREFUeJzt3buqnGUYhuFbE1dC9BxUtLFIjAbEE3ALYpHCOl1SGMGTEXIgkjSCIIIiWAgKikQQIeCmWRhNNMZisFiwZjJMXHzzrbkuePoH3v+bzT/87xQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsMojowv8D85UF6rHRxfhgN+rL6o/RhfZZe9Uv1X3ZSvzS3Vx6fQ4Ui9X9xp/Ecjq/FW9uGSGW+/R0QUewrvN3X9XnGwxqynNfIE9NboAa3t6dIFNzXxAvhtdgLV9O7rApma+i3W++rx6bHQRVvqzxV3Gr0cX2UVvVD82/ouoHJ4fqleWDW8GM7+D/OdE9Vz1xOgiHLBffVP9M7oIAAAAAAAAAAAAAAAAAACwsdmfST9dXWmxGODM4C4cdLu6UX1Q3R3cZSedrj5t/OYOWZ2Pq70lM9x6J0YXeAjvV5dGl+CBnqx+rT4bXWQTM29WfG10Adb2+ugCm5r5gNwfXYDjb+YDcn10Adb24egCu+hU9Unjv4TK6nzUxPuTZ7/Nu1ddrl7N6tFts9/iXf5aiz/RAQAAAAAAAAAAAAAAAAAA5jP7M+m1WAhwNqtHt83t6qs8jz7U29Wtxm/ukMPzU/Xm0ulxpC60eHUafRHI6typzi2Z4dabeXHce9XJ0SV4oL3q6ugSm5r5gDwzugBre3Z0gU3NfEBuji7A2r4fXWAXvVT93fjP2LI6d6vnl8yQI3ax+rnxF4EcnlvVW0unN4Hj8DvIqeqF7ObdNvvVl/n7NQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA41v4FxbfS8T3Dp9QAAAAASUVORK5CYII="/>
+      </g>
+    </svg>
+    
+  </div>
+  
+  <div class="button-container">
+    <ion-button color="light" shape="round" class="half-width" (click)="modalOfrecer()">
+      <ion-icon slot="start" name="star"></ion-icon>
+      Ofrecer Estacionamiento
+    </ion-button>
+    <ion-button color="success" shape="round" class="half-width" (click)="generarMarcadores()">
+      <ion-icon slot="start" name="star"></ion-icon>
+      Buscar Estacionamiento
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,175 @@
+app-home::part(background) {
+    background: #82fad2b6;
+  }
+  
+  
+  #container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  .flex{
+    display: flex;
+  }
+  
+  
+  .formulario {
+    margin: 0;
+    margin-top: 10%;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: calc(100vh - (56px + 100px));
+    overflow-y: auto;
+    margin-bottom: 10%; 
+  }
+  .aaaa{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .formulario{
+  width: 95%;
+  padding: 10px;
+  
+  
+  }
+h1{
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: left;
+  font-size: medium;
+  font-weight: bold;
+
+}
+  ion-item{
+  color: #C9C9C9;
+  margin-top: 20px;
+  border-radius: 10px;
+  label{
+    color: rgba(126, 217, 87, 1);
+  }
+  
+  }
+  ion-button{
+  color: rgb(0, 0, 0);
+  height: 56px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgba(126, 217, 87, 1);
+  box-shadow: 1px 3px 8px #000000;
+  opacity: 76%;
+  }
+  
+  
+  
+  
+  .text{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  }
+  
+  ion-grid {
+  --ion-grid-width: 50%;
+  --ion-grid-width-xs: 95%;
+  --ion-grid-width-sm: 60%;
+  --ion-grid-width-md: 40%;
+  --ion-grid-width-lg: 40%;
+  --ion-grid-width-xl: 40%;
+  }
+  ion-input:invalid:focus {
+  background-image: linear-gradient(pink, lightgreen);
+  }
+  
+  ion-label.ion-color-primary {
+  color: #C9C9C9;
+  }
+  
+  .bflex{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .botonesR{
+    width: 100%;
+    margin-left: 10px;
+  }
+  .botonesL{
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  @keyframes titleAnimation {
+    0% {
+      transform: translateX(0);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateX(45%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0.2;
+    }
+  }
+  
+  .title-animation {
+    animation: titleAnimation 2.5s infinite;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .slide-animation {
+    animation: slideIn 1s;
+  }
+  
+  
+  ion-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Asegura que el header y el footer estén en la parte superior */
+  }
+  ion-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }

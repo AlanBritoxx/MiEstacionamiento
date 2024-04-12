@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.absolute{
+    width: 100%;
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ion-button{
+    width: 70%;
+    height: 60px;
+    color: white;
+}
+ion-button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

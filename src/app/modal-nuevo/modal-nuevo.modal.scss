@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: absoluite;
+    top: 20px;
+    left: 20px;
+    margin: 20px;
+    margin-bottom: 70px !important;
+}
+.flex{
+    margin-top: 50px !important;
+    margin: 20px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+svg{
+    margin-right: 10px;
+}
+
+.cerrar{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}

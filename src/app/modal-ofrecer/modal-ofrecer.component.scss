@@ -1,0 +1,100 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.flexh1{
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+}
+.flex{
+    margin-top: 10px !important;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    margin: 30px;
+    margin-bottom: 30px !important;
+}
+.der{
+    display: flex;
+    justify-content: end;
+    
+}
+.der a{
+    color: #7ED957;
+    text-decoration-color: #7ED957;
+    text-align: center;
+}
+.izq{
+    width: 60%;
+    
+    align-items: center;
+    display: flex;
+    justify-content: baseline;
+    
+}
+.izq img{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+.container text{
+    width: 100%;
+}
+.flexhora{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    margin: 25px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+.flexvehiculo{
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    margin: 25px;
+    margin-bottom : 0px !important;
+}
+
+.flexinfo{
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    margin: 25px;
+    margin-bottom: 10px !important;
+}
+.containerhora{
+    text-decoration: underline;
+}
+
+.fleximag{
+    display: flex;
+    align-items: center;
+}
+svg{
+    margin-right: 10px;
+}
+.calle{
+    margin-right: 40px;
+}
+.visa{
+    width: 30px;
+    height: 30px;
+}
+.ten{
+    text-decoration: underline;
+}
+
+.center{
+    margin-top: 0px;
+    display: flex;
+    justify-content:center;
+}
+ion-button{
+    margin-top: 20px;
+    height: 60px;
+    width: 50%;
+}
