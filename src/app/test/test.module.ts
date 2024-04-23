@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { HttpClientModule } from '@angular/common/http';
 
 import { TestPageRoutingModule } from './test-routing.module';
 
@@ -14,7 +15,8 @@ import { TestPage } from './test.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    TestPageRoutingModule
+    TestPageRoutingModule,
+    HttpClientModule 
   ],
   declarations: [TestPage]
 })

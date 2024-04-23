@@ -5,22 +5,50 @@ import { ModalController, AnimationController } from '@ionic/angular';
 import { ModalInformacionComponent } from '../modal-informacion/modal-informacion.component';
 import { ModalOfrecerComponent } from '../modal-ofrecer/modal-ofrecer.component';
 import { ModalNuevoModal } from '../modal-nuevo/modal-nuevo.modal';
+import { environment } from 'src/environments/environment';
+import { HttpClient } from '@angular/common/http';
 
+interface WeatherResponse {
+  main: {
+    temp: number;
+    humidity: number;
+    // Otras propiedades de 'main' según la respuesta de la API
+  };
+  // Otras propiedades de la respuesta según la API
+}
+const API_URL = environment.API_URL;
+const API_KEY = environment.API_KEY;
 const apiKey = 'AIzaSyCqGnMP0X13WuMfZda1mTc8ukYYF8CzHoM';
 @Component({
   selector: 'app-test',
   templateUrl: './test.page.html',
   styleUrls: ['./test.page.scss'],
 })
+
 export class TestPage implements AfterViewInit{
 
   @ViewChild('map', { read: ElementRef }) mapRef!: ElementRef;
-
+  weatherTemp: any  
   map: GoogleMap | undefined;
   circles: Circle[] = [];
   markerId: string | undefined;
-  constructor(private modalCtrl: ModalController, private animationCtrl: AnimationController) { }
+  
+  constructor(public httpClient:HttpClient ,private modalCtrl: ModalController, private animationCtrl: AnimationController) {
+    this.loadData()
+   }
 
+   
+  async loadData(){
+    
+    const currentPosition = await this.getCurrentPosition();
+    this.httpClient.get<WeatherResponse>(`${API_URL}/weather?lat=${currentPosition.coords.latitude}&lon=${currentPosition.coords.longitude}&appid=${API_KEY}`).subscribe(results =>{
+      console.log(results);
+      this.weatherTemp = (results.main.temp - 273).toFixed(0)
+
+      console.log(this.weatherTemp)
+    })
+    
+  } 
   ngAfterViewInit() {
     this.createMap();
   }
@@ -235,4 +263,6 @@ export class TestPage implements AfterViewInit{
   }
 
 
+
 }
+
