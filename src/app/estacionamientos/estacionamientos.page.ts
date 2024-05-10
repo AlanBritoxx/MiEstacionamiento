@@ -15,4 +15,8 @@ export class EstacionamientosPage implements OnInit {
   goToTest(){
     this.router.navigate(['/test']);
   }
+  goToPaypal(){
+    this.router.navigate(['https://www.paypal.com/ncp/payment/2FALU9GG8SVGA']);
+  }
 }
+

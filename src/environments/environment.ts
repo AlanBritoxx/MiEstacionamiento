@@ -5,7 +5,16 @@
 export const environment = {
   production: false,
   API_KEY : '831247d59e1e971493039f87dc324cf0',
-  API_URL : 'https://api.openweathermap.org/data/2.5/'
+  API_URL : 'https://api.openweathermap.org/data/2.5/',
+  firebaseConfig : {
+    apiKey: "AIzaSyBcJ2SvpBwWdunHPedB2S9cWgfbJML-XmM",
+    authDomain: "miestacionamiento-f9aa2.firebaseapp.com",
+    projectId: "miestacionamiento-f9aa2",
+    storageBucket: "miestacionamiento-f9aa2.appspot.com",
+    messagingSenderId: "59001723690",
+    appId: "1:59001723690:web:cc7d7fff158a8a0e2cdc53",
+    measurementId: "G-7VDGF64RMY"
+  }
 };
 
 /*
